@@ -27,8 +27,23 @@ main{
 	justify-content: center;
 	align-items: center;
 }
+
 .flex-column{
 	flex-direction: column;
+}
+
+.btn{
+	padding: 1rem 2rem;
+	background: #3882f6;
+	border-radius: 10px;
+	color: #e5e7fb;
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+.hover:hover{
+	transition: 0.5s;
+	cursor: pointer;
 }
 /*************************************************************/
 /************************** navigation ***********************/
@@ -65,8 +80,7 @@ nav{
 }
 .anchor-container a:hover{
 	color: #3882f6;
-	transition: 0.5s;
-	cursor: pointer;
+	
 }
 
 /*************************************************************/
@@ -88,7 +102,7 @@ nav{
 }
 
 .hero-text-container h1{
-	font-weight: extra-bold;
+	font-weight: 900;
 	font-size: 4.8rem;
 	color: #f9faf8;
 	margin-bottom: 1.2rem;
@@ -103,19 +117,11 @@ nav{
 
 .hero-text-container button{
 	margin-bottom: 1.2rem;
-	padding: 1rem 2rem;
-	background: #3882f6;
-	border-radius: 10px;
-	color: #e5e7fb;
 	border: none;
-	font-weight: 600;
-	font-size: 1.8rem;
 }
 
 .hero-text-container button:hover{
-	transition: 0.5s;
 	transform: scale(1.05);
-	cursor: pointer;
 }
 
 .hero-img-container img{
@@ -134,7 +140,7 @@ nav{
 
 .section-populars h2{
 	font-size: 3.6rem;
-	font-weight: extra-bold;
+	font-weight: 900;
 	color: #1f2937;
 	margin-top: 4.8rem;
 	margin-bottom: 3.2rem;
@@ -155,10 +161,64 @@ nav{
 
 .populars-container article:hover{
 	transform: scale(1.1);
-	transition: 0.5s;
-	cursor: pointer;
 }
 
+/*************************************************************/
+/************************* testimonies ***********************/
+/*************************************************************/
+
+.section-testimonies{
+	background: #e5e7eb;
+	color: #1f2937;
+	font-size: 3.6rem;
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 6.8rem;
+}
+
+.quote{
+	margin:3.2rem 3.2rem 0 3.2rem;
+}
+
+.customer{
+	align-self: flex-end;
+	margin-right: 10rem;
+	margin-bottom: 1.2rem;
+}
+
+/*************************************************************/
+/***************************** Cta ***************************/
+/*************************************************************/
+
+.cta-section{
+	background: #3882f6;
+	margin: 0 40rem 6.8rem 40rem;
+	padding: 4.8rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 10px;
+}
+
+.cta-section h3{
+	font-size: 2.8rem;
+	color: #f9faf8;
+}
+
+.cta-section p {
+	color: #f9faf8;
+	font-size: 1.4rem;
+}
+
+.cta-section button{
+	padding: 1.2rem 2.4rem;
+	border: 1px solid #f9faf8;
+	box-shadow: 1px 1px 7px 3px #f9faf8;
+}
+.cta-section button:hover{
+	transform: scale(1.1);
+	box-shadow: 1px 1px 10px 5px #f9faf8;
+}
 
 /*************************************************************/
 /**************************** footer *************************/
