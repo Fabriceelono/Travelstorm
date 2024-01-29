@@ -19,7 +19,7 @@ body{
 }
 
 main{
-	
+	max-width: 1800px;
 }
 
 .flex-center{
@@ -192,7 +192,7 @@ nav{
 
 .cta-section{
 	background: #3882f6;
-	margin: 0 40rem 6.8rem 40rem;
+	margin: 0 20rem 6.8rem 20rem;
 	padding: 4.8rem 0;
 	display: flex;
 	align-items: center;
@@ -234,3 +234,5 @@ footer{
 /*************************************************************/
 /********************** media-queries ************************/
 /*************************************************************/
+
+/*First breakPoint at 1440px*/
