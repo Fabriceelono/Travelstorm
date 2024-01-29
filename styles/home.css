@@ -1,0 +1,74 @@
+/*************************************************************/
+/**************************** general ************************/
+/*************************************************************/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+/*Default font-size is 16px, I want it to be 10px so that each rem will be 10px	*/
+ 	overflow-x: hidden;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+}
+
+main{
+	margin: 0 10rem;
+}
+
+/*************************************************************/
+/************************** navigation ***********************/
+/*************************************************************/
+
+nav{
+	background: #1f2937;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-container{
+	
+}
+
+.logo-container img {
+	width: 14rem;
+	height: 6rem;
+}
+
+.anchor-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.4rem;
+	padding-right: 2.4rem;
+}
+
+.anchor-container a {
+	text-decoration: none;
+	color: #F9FAF8;
+	font-size: 2.4rem;
+}
+.anchor-container a:hover{
+	color: #3882f6;
+	transition: 0.6s;
+}
+
+/*************************************************************/
+/**************************** footer *************************/
+/*************************************************************/
+
+footer{
+	background: #1f2937;
+	color: #efefef;
+	height: 4.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
