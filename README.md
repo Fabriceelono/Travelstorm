@@ -1,6 +1,6 @@
 # Travelstorm 
 ## Description
-Travelstorm is a website that showcases some of the best cities to have an amazing holiday trip
+Travelstorm is a captivating website that curates a collection of the world's most enticing cities, offering an immersive journey into the finest destinations for unforgettable holiday experiences.
 
 ## Team Members
 |Name | Page |
