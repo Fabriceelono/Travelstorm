@@ -1,0 +1,121 @@
+/* Imports  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* end general */
+/*************************************************************/
+/************************** navigation ***********************/
+/*************************************************************/
+header {
+  background: #1f2937;
+}
+
+nav {
+  margin: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+}
+
+.logo-container img {
+  width: 14rem;
+  height: 6rem;
+}
+
+.anchor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.anchor-container a {
+  text-decoration: none;
+  color: #f9faf8;
+  font-size: 2.4rem;
+}
+.anchor-container a:hover {
+  color: #3882f6;
+  transition: 0.5s;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 250px 130px 150px 130px;
+  background-image: url(../images/brussels/navimage.jpg);
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0.8; */
+}
+main h3 {
+  width: 40%;
+  margin: 10px 0 25px 0;
+}
+button {
+  background-color: #3882f6;
+  color: white;
+  padding: 15px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  background-color: #1f2937;
+}
+h2 {
+  padding: 50px;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Bonheur Royale", cursive;
+}
+.places {
+  padding: 35px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.places div {
+  position: relative; /* Make the container position relative */
+  box-shadow: -15px -18px 19px 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Ensure overflow doesn't affect positioning */
+  border-radius: 15px;
+}
+.places div:hover {
+  transform: translateY(-15px);
+  transition: transform 0.3s ease;
+}
+.places div img {
+  width: 380px;
+  object-fit: cover;
+}
+.places div h5 {
+  position: absolute; /* Position the h5 absolutely */
+  top: 50%; /* Align to the vertical center */
+  left: 50%; /* Align to the horizontal center */
+  transform: translate(-50%, -50%); /* Center the h5 */
+  margin: 0; /* Remove default margin */
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+footer {
+  background: #1f2937;
+  color: #e5e7fb;
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
