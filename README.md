@@ -18,4 +18,4 @@
 |<a href="https://github.com/DaveMEgg" target="_blank"><img src="https://github.com/DaveMEgg.png" width="50px" align="center"> David</a>|Newcastle|
 |<a href="https://github.com/Fabriceelono" target="_blank"><img src="https://github.com/Fabriceelono.png" width="50px" align="center"> Fabrice</a>|Brussels|
 |<a href="https://github.com/kumang-subba" target="_blank" ><img src="https://github.com/kumang-subba.png" width="50px" align="center"> Kumang</a>|Kathmandu|
-|Shaked|Telaviv|
+|<a href="https://github.com/shakedlv" target="_blank" ><img src="https://github.com/shakedlv.png" width="50px" align="center"> Shaked</a>|Tel-Aviv|
