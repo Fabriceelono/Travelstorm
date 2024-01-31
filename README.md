@@ -12,7 +12,7 @@ Travelstorm is a captivating website that curates a collection of the world's mo
 |Shaked|Telaviv|
 
 ## Preview link
-loading ....
+https://fabriceelono.github.io/Travelstorm/
 
 
 
