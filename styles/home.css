@@ -45,6 +45,7 @@ main{
 	transition: 0.5s;
 	cursor: pointer;
 }
+
 .logo-anchor{
 	text-decoration: none;
 }
@@ -90,6 +91,12 @@ nav{
 .anchor-container a:hover{
 	color: #3882f6;
 	
+}
+
+.anchor-container a:first-child{
+	pointer-events: none;
+	font-weight: 900;
+	font-size: 2rem;
 }
 
 /*************************************************************/
