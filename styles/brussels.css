@@ -190,7 +190,6 @@ h2 {
   background-color: #1f2937;
 }
 .testimony-content {
-  display: flex;
   margin: auto;
   width: 70%;
 }
@@ -258,6 +257,13 @@ footer div {
   gap: 1.2rem;
   margin-top: 1.2rem;
   padding: 1.2rem 0;
+}
+@media screen and (min-width: 600px) {
+  .testimony-content {
+    display: flex;
+    margin: auto;
+    width: 70%;
+  }
 }
 @media screen and (min-width: 1000px) {
   * {
