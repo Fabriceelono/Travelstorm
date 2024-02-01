@@ -130,7 +130,7 @@ h2 {
   margin-top: 10px;
 }
 .card {
-  width: 450px;
+  width: 400px;
   background-color: #e5e4e2;
   border-radius: 8px;
   overflow: hidden;
@@ -180,14 +180,53 @@ h2 {
   width: 30%;
   height: auto;
   margin: 0px 200px 30px 0px;
+  box-shadow: 7px 12px 36px 14px black;
 }
 /* reasons end  */
 .testimony {
   padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #1f2937;
 }
-.testimony h3 {
-  font-size: 28px;
-  text-align: center;
+.testimony-content {
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+.testimony-content i {
+  font-size: 150px;
+  color: #e5e7eb;
+}
+.testimony-person {
+  display: flex;
+}
+.testimony-person img {
+  width: 30%;
+  height: auto;
+  margin-left: 52px;
+  clip-path: circle(35% at 40% 50%);
+  object-fit: cover;
+}
+.person-info {
+  padding-left: 30px;
+}
+.person-info h3 {
+  color: #e5e7eb;
+  font-size: 36px;
+}
+.person-info h5 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.testimony-text h4 {
+  font-size: 20px;
+  font-style: italic;
+  color: #2469da;
+}
+.testimony-text p {
+  font-size: 18px;
+  color: #e5e4e2;
+  padding-top: 5px;
 }
 footer {
   background: #1f2937;
