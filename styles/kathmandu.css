@@ -36,8 +36,8 @@ html{
 	cursor: pointer;
 }
 section{
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    min-height: 100vh;
     padding: 2rem 0;
 }
 button{
@@ -94,7 +94,7 @@ nav{
 	font-size: 1.8rem;
     position: relative;
 }
-.anchor-container a.current-page {
+.current-page {
     font-weight: bold;
     font-size: 2rem;
     pointer-events: none;
@@ -205,7 +205,7 @@ nav{
 .slide p{
     font-size: 2rem;
     max-width: 50%;
-    text-align: left;
+    text-align: center;
 }
 .slide a{
     background-color: #3882F6;
@@ -343,19 +343,73 @@ footer div{
     .details-section:nth-of-type(even) > .details-container {
         flex-direction: column-reverse;
     }
+    .details-section h2{
+        font-size: 3rem;
+    }
     
 }
-@media(max-width:900px){
+@media(max-width:992px){
 	nav{
 		margin: 0 2rem;
 	}
+    .slide img{
+        max-width: 60%;
+    }
+    
+    .slide h3{
+        font-size: 3.5rem;
+        max-width: 50%;
+    }
+    .slide p{
+        font-size: 1.8rem;
+        max-width: 40%;
+    }
+    .slide a{
+        font-size: 2.5rem;
+        padding: 6px 10px;
+        font-weight: 400;
+    }
 }
 
-@media(max-width:730px){
+@media(max-width:768px){
+    header {
+        padding: 0 0 2rem 0;
+    }
 	nav{
 		margin: 0;
 		justify-content: center;
 		flex-direction: column;
+		padding: 0;
+		padding-top: 1.2rem;
+		gap: 1.2rem;
 	}
-	
+    .anchor-container{
+		padding-right: 0;
+	}
+	.logo-container {
+		font-size: 1.8rem;
+	}
+	.anchor-container a{
+		font-size: 1.2rem;
+	}
+	.current-page{
+		font-size: 1.6rem;
+	}
+    .slide img{
+        max-width: 55%;
+    }
+    
+    .slide h3{
+        font-size: 3rem;
+        max-width: 50%;
+    }
+    .slide p{
+        font-size: 1.5rem;
+        max-width: 40%;
+    }
+    .slide a{
+        font-size: 2.5rem;
+        padding: 6px 10px;
+        font-weight: 400;
+    }
 }
