@@ -205,6 +205,9 @@ nav{
 	transform: scale(1.1);
 }
 
+.populars-container article p{
+	color: #1f2937;
+}
 /*************************************************************/
 /************************* testimonies ***********************/
 /*************************************************************/
@@ -320,6 +323,8 @@ footer div{
 @media(max-width:730px){
 	nav{
 		margin: 0;
+		justify-content: center;
+		flex-direction: column;
 	}
 	.hero-text-container{
 		margin-right: 2rem;
@@ -338,11 +343,9 @@ footer div{
 		margin-top: 2.4rem;
 	}
 	.anchor-container{
-		display: none;
+		
 	}
-	nav aside {
-		display: block;
-	}
+	
 }
 
 @media(max-width:530px){
