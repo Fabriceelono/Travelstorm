@@ -22,9 +22,7 @@ main{
 	width: 100%;
 }
 
-nav aside{
-	display: none;
-}
+
 
 .flex-center{
 	display: flex;
