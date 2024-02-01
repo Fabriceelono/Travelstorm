@@ -325,6 +325,9 @@ footer div{
 		margin: 0;
 		justify-content: center;
 		flex-direction: column;
+		padding: 0;
+		padding-top: 1.2rem;
+		gap: 1.2rem;
 	}
 	.hero-text-container{
 		margin-right: 2rem;
@@ -343,7 +346,16 @@ footer div{
 		margin-top: 2.4rem;
 	}
 	.anchor-container{
-		
+		padding-right: 0;
+	}
+	.logo-container p{
+		font-size: 1.8rem;
+	}
+	.anchor-container a{
+		font-size: 1.2rem;
+	}
+	.anchor-container a:first-child{
+		font-size: 1.6rem;
 	}
 	
 }
@@ -359,6 +371,7 @@ footer div{
 	.section-testimonies{
 		font-size: 1.8rem;
 	}
+
 }
 
 
