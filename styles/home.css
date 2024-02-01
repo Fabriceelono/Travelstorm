@@ -19,7 +19,11 @@ body{
 }
 
 main{
-	
+	width: 100%;
+}
+
+nav aside{
+	display: none;
 }
 
 .flex-center{
@@ -45,9 +49,24 @@ main{
 	transition: 0.5s;
 	cursor: pointer;
 }
+
+.logo-anchor{
+	text-decoration: none;
+}
+
+.icon{
+	font-size: 1.8rem;
+	color: #e5e7fb;
+}
+.icon:hover{
+	color: #3882f6;
+}
+
 /*************************************************************/
 /************************** navigation ***********************/
 /*************************************************************/
+
+
 header{
 	background: #1f2937;
 }
@@ -86,6 +105,12 @@ nav{
 	
 }
 
+.anchor-container a:first-child{
+	pointer-events: none;
+	font-weight: 900;
+	font-size: 2rem;
+}
+
 /*************************************************************/
 /*********************** Hero Section ************************/
 /*************************************************************/
@@ -93,7 +118,7 @@ nav{
 .section-hero{
 	background: #1f2937;
 	color: #e5e7fb;
-	padding: 10rem 0;
+	padding: 10rem 5rem;
 }
 
 .hero-text-container{
@@ -231,12 +256,92 @@ nav{
 footer{
 	background: #1f2937;
 	color: #e5e7fb;
-	height: 4.8rem;
 	margin-top: 2.4rem;
+}
+
+footer p{
+	margin-top: 2.4rem;
+}
+
+footer div{
+	gap: 1.2rem;
+	margin-top: 1.2rem;
+	padding: 1.2rem 0;
 }
 
 /*************************************************************/
 /********************** media-queries ************************/
 /*************************************************************/
+@media(max-width:1200px){
+	.populars-container{
+		gap: 5rem;
+	}
+	.cta-section{
+		margin: 0 5rem 6.8rem 5rem
+	}
+}
 
-/*First breakPoint at 1440px*/
+@media(max-width:1000px){
+	.populars-container{
+		gap: 2rem;
+	}
+}
+
+@media(max-width:900px){
+	nav{
+		margin: 0 2rem;
+	}
+	.hero-text-container{
+		margin-right: 5rem;
+	}
+	.populars-container{
+		display: grid;
+		grid-template-columns:repeat(2, 1fr);
+	}
+	.section-testimonies{
+		font-size: 2.8rem;
+	}
+}
+
+@media(max-width:730px){
+	nav{
+		margin: 0;
+	}
+	.hero-text-container{
+		margin-right: 2rem;
+		text-align: center;
+	}
+	.section-hero{
+		display: grid;
+		grid-template-rows:repeat(2, 1fr);
+		gap: 2.4rem;
+	}
+	.cta-section{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);	
+	}
+	.cta-section button{
+		margin-top: 2.4rem;
+	}
+	.anchor-container{
+		display: none;
+	}
+	nav aside {
+		display: block;
+	}
+}
+
+@media(max-width:530px){
+	.cta-section{
+		margin: 0 1rem 6.8rem 1rem;
+		text-align: center;
+	}
+	.section-populars h2{
+		font-size: 2.8rem;
+	}
+	.section-testimonies{
+		font-size: 1.8rem;
+	}
+}
+
+
