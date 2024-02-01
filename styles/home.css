@@ -99,12 +99,26 @@ nav{
 	text-decoration: none;
 	color: #F9FAF8;
 	font-size: 1.8rem;
+	position: relative;
 }
 .anchor-container a:hover{
 	color: #3882f6;
 	
 }
-
+.anchor-container a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #E5E7EB;
+    left: 0;
+    bottom: -1px;
+    transition: all 300ms;
+}
+.anchor-container a:hover::after{
+    width: 100%;
+    background-color: #3882f6;
+}
 .anchor-container a:first-child{
 	pointer-events: none;
 	font-weight: 900;
