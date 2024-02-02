@@ -67,7 +67,7 @@ nav {
 }
 .anchor-container a.brussels-page {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.2rem;
   pointer-events: none;
 }
 .anchor-container a:hover {
@@ -265,6 +265,7 @@ footer div {
   margin-top: 1.2rem;
   padding: 1.2rem 0;
 }
+
 @media screen and (min-width: 600px) {
   .testimony-content {
     display: flex;
@@ -524,5 +525,30 @@ footer div {
     gap: 1.2rem;
     margin-top: 1.2rem;
     padding: 1.2rem 0;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0 0 2rem 0;
+  }
+  nav {
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 1.2rem;
+    gap: 1.2rem;
+  }
+  .anchor-container {
+    padding-right: 0;
+  }
+  .logo-container {
+    font-size: 1.8rem;
+  }
+  .anchor-container a {
+    font-size: 1.2rem;
+  }
+  .brussels-page {
+    font-size: 1.6rem;
   }
 }
