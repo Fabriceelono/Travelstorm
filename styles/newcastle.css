@@ -160,9 +160,19 @@ body {
 footer {
   background: #010911;
   color: #e5e7fb;
+  padding: 20px;
+  text-align: center;
 }
 
-footer p {
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer p {
   font-size: 15px;
 }
 
@@ -171,3 +181,17 @@ footer div {
   margin-top: 1.2rem;
   padding: 1.2rem 0;
 }
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+
