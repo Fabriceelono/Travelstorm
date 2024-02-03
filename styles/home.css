@@ -161,7 +161,7 @@ nav{
 }
 
 .hero-text-container button:hover{
-	transform: scale(1.05);
+	background: #2565eb;
 }
 
 .hero-img-container img{
@@ -260,7 +260,7 @@ nav{
 	box-shadow: 1px 1px 7px 3px #f9faf8;
 }
 .cta-section button:hover{
-	transform: scale(1.1);
+	background: #2565eb;
 	box-shadow: 1px 1px 10px 5px #f9faf8;
 }
 
@@ -367,7 +367,8 @@ footer div{
 		font-size: 2.8rem;
 	}
 	.section-testimonies{
-		font-size: 1.8rem;
+		font-size: 2.2rem;
+		padding: 5rem;
 	}
 	.populars-container article:hover{
 	transform: scale(1.05);
