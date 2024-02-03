@@ -440,4 +440,7 @@ footer nav{
         width: 100%;
         font-size: 1.6rem;
     }
+    .hero-section h2{
+        max-width: 90%;
+    }
 }
