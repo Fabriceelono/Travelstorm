@@ -12,6 +12,8 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    background-color: #1F2937;
+
 }
 .flex-center{
 	display: flex;
@@ -124,7 +126,7 @@ nav{
 /*************************************************************/
 
 .hero-section{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images/kathmandu/kathmandu-1.jpeg");
+    background-image: url("../images/kathmandu/kathmandu-1.jpeg");
     background-color: rgba(0,0,0,0.5);
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,12 +140,15 @@ nav{
     text-wrap: wrap;
     max-width: 50rem;
     text-shadow: 1px 1px 2px black;
+    animation: TextUpAnimation 1s ease-in;
 }
 .hero-section h2{
     font-size: 2.4rem;
     text-wrap: wrap;
     max-width: 100rem;
+    opacity: 0;
     text-shadow: 1px 1px 2px black;
+    animation: TextUpAnimation 1s ease-in 0.5s forwards;
 }
 
 .hero-section a{
@@ -155,9 +160,22 @@ nav{
     font-weight: 600;
     text-align: center;
     transition: all 200ms;
+    opacity: 0;
+    animation: TextUpAnimation 1s ease-in 1s forwards;
 }
 .hero-section a:hover{
     background-color: #2469da;
+}
+
+@keyframes TextUpAnimation {
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*************************************************************/
