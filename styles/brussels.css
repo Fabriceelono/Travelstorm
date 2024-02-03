@@ -1,5 +1,5 @@
 /* Imports  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
 /* general */
 * {
@@ -17,6 +17,7 @@ button {
   background-color: #3882f6;
   color: white;
   padding: 15px;
+  font-size: 15px;
   border-top-right-radius: 23px;
   border-bottom-left-radius: 20px;
   border: none;
@@ -47,7 +48,7 @@ nav {
   justify-content: space-between;
 }
 
-.logo-container {
+.logo-container a {
   color: #f9faf8;
   font-size: 2.4rem;
   font-weight: bold;
@@ -66,7 +67,7 @@ nav {
 }
 .anchor-container a.brussels-page {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.2rem;
   pointer-events: none;
 }
 .anchor-container a:hover {
@@ -93,7 +94,7 @@ body {
 }
 
 main {
-  padding: 250px 130px 150px 130px;
+  padding: 150px 30px 50px 90px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/brussels/navimage.jpg);
   background-size: cover;
@@ -105,7 +106,6 @@ h1 {
   font-size: 50px;
 }
 main h3 {
-  width: 40%;
   margin: 10px 0 25px 0;
   color: white;
   font-size: 20px;
@@ -116,42 +116,439 @@ h2 {
   padding: 50px;
   text-align: center;
   font-size: 50px;
+  color: white;
 }
+/* places to visit  */
 .places {
-  padding: 35px;
+  background-color: rgb(31 41 55 / 89%);
+}
+.card-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
-.places div {
-  position: relative; /* Make the container position relative */
-  box-shadow: -15px -18px 19px 1px rgba(0, 0, 0, 0.5);
-  overflow: hidden; /* Ensure overflow doesn't affect positioning */
-  border-radius: 15px;
-}
-.places div:hover {
-  transform: translateY(-15px);
+.card {
+  width: 400px;
+  background-color: #e5e4e2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 9px 9px rgba(0, 0, 0, 0.2);
+  margin: 20px;
   transition: transform 0.3s ease;
 }
-.places div img {
-  width: 380px;
+.card:hover {
+  transform: translateY(-15px);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.card-content p {
+  font-size: 15px;
+  line-height: 1.3;
+  padding-bottom: 12px;
+}
+.card-content button {
+  display: block;
+  margin: auto;
+  border-radius: 0;
+}
+/* end places  */
+/* reasons section */
+.reasons-section {
+  padding-top: 100px;
+  background-color: #e5e4e2;
+  padding-bottom: 50px;
+}
+.content {
+  margin-left: 100px;
+  padding-right: 25px;
+  display: block;
+  padding-bottom: 20px;
+}
+.content h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+.content p {
+  font-size: 25px;
+}
+.reasons-section img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 7px 12px 36px 14px black;
+}
+/* reasons end  */
+.testimony {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #1f2937;
+}
+.testimony-content {
+  margin: auto;
+  width: 70%;
+}
+.testimony-content i {
+  font-size: 150px;
+  color: #e5e7eb;
+}
+.testimony-person img {
+  width: 30%;
+  height: auto;
+  margin-left: 52px;
+  clip-path: circle(35% at 40% 50%);
   object-fit: cover;
 }
-.places div h5 {
-  position: absolute; /* Position the h5 absolutely */
-  top: 50%; /* Align to the vertical center */
-  left: 50%; /* Align to the horizontal center */
-  transform: translate(-50%, -50%); /* Center the h5 */
-  margin: 0; /* Remove default margin */
-  padding: 10px;
+.person-info {
+  padding-left: 30px;
+}
+.person-info h3 {
+  color: #e5e7eb;
+  font-size: 36px;
+}
+.person-info h5 {
   font-size: 25px;
-  color: white;
-  text-shadow: 2px 2px 2px black;
+  padding-bottom: 20px;
+}
+.testimony-text h4 {
+  font-size: 20px;
+  font-style: italic;
+  color: #2469da;
+}
+.testimony-text p {
+  font-size: 18px;
+  color: #e5e4e2;
+  padding-top: 5px;
+}
+/*************************************************************/
+/**************************** footer *************************/
+/*************************************************************/
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.icon {
+  font-size: 2.8rem;
+  color: #e5e7fb;
+}
+.icon:hover {
+  color: #3882f6;
 }
 footer {
   background: #1f2937;
   color: #e5e7fb;
-  height: 4.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+footer p {
+  font-size: 15px;
+}
+
+footer div {
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+  padding: 1.2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .testimony-content {
+    display: flex;
+    margin: auto;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  button {
+    background-color: #3882f6;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    transition: all 200ms;
+  }
+
+  button:hover {
+    background-color: #2469da;
+    cursor: pointer;
+  }
+  /* end general */
+  /*************************************************************/
+  /************************** navigation ***********************/
+  /*************************************************************/
+  header {
+    background: #1f2937;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav {
+    margin: 0 10rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-container a {
+    color: #f9faf8;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+
+  .anchor-container {
+    display: flex;
+    gap: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .anchor-container a {
+    color: #e5e7eb;
+    font-size: 1.8rem;
+    position: relative;
+  }
+  .anchor-container a.brussels-page {
+    font-weight: bold;
+    font-size: 2rem;
+    pointer-events: none;
+  }
+  .anchor-container a:hover {
+    color: #3882f6;
+  }
+  .anchor-container a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #e5e7eb;
+    left: 0;
+    bottom: -1px;
+    transition: all 300ms;
+  }
+  .anchor-container a:hover::after {
+    width: 100%;
+    background-color: #3882f6;
+  }
+
+  /* end nav  */
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  main {
+    padding: 250px 130px 150px 130px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/brussels/navimage.jpg);
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.8; */
+  }
+  h1 {
+    color: white;
+    font-size: 50px;
+  }
+  main h3 {
+    width: 40%;
+    margin: 10px 0 25px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  h2 {
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+  }
+  /* places to visit  */
+  .places {
+    background-color: rgb(31 41 55 / 89%);
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .card {
+    width: 400px;
+    background-color: #e5e4e2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 9px 9px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-15px);
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .card-content {
+    padding: 16px;
+  }
+
+  /* end places  */
+  /* reasons section */
+  .reasons-section {
+    display: flex;
+    padding-top: 100px;
+    background-color: #e5e4e2;
+  }
+  .content {
+    margin-left: 200px;
+    padding-right: 25px;
+    display: block;
+  }
+  .content h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #1f2937;
+  }
+  .content p {
+    font-size: 25px;
+  }
+  .reasons-section img {
+    width: 30%;
+    height: auto;
+    margin: 0px 200px 30px 0px;
+    box-shadow: 7px 12px 36px 14px black;
+  }
+  /* reasons end  */
+  .testimony {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #1f2937;
+  }
+  .testimony-content {
+    display: flex;
+    margin: auto;
+    width: 70%;
+  }
+  .testimony-content i {
+    font-size: 150px;
+    color: #e5e7eb;
+  }
+  .testimony-person {
+    display: flex;
+  }
+  .testimony-person img {
+    width: 30%;
+    height: auto;
+    margin-left: 52px;
+    clip-path: circle(35% at 40% 50%);
+    object-fit: cover;
+  }
+  .person-info {
+    padding-left: 30px;
+  }
+  .person-info h3 {
+    color: #e5e7eb;
+    font-size: 36px;
+  }
+  .person-info h5 {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .testimony-text h4 {
+    font-size: 20px;
+    font-style: italic;
+    color: #2469da;
+  }
+  .testimony-text p {
+    font-size: 18px;
+    color: #e5e4e2;
+    padding-top: 5px;
+  }
+  /*************************************************************/
+  /**************************** footer *************************/
+  /*************************************************************/
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+  .icon {
+    font-size: 1.8rem;
+    color: #e5e7fb;
+  }
+  .icon:hover {
+    color: #3882f6;
+  }
+  footer {
+    background: #1f2937;
+    color: #e5e7fb;
+  }
+  footer p {
+    font-size: 15px;
+  }
+
+  footer div {
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+    padding: 1.2rem 0;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0 0 2rem 0;
+  }
+  nav {
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 1.2rem;
+    gap: 1.2rem;
+  }
+  .anchor-container {
+    padding-right: 0;
+  }
+  .logo-container {
+    font-size: 1.8rem;
+  }
+  .anchor-container a {
+    font-size: 1.2rem;
+  }
+  .brussels-page {
+    font-size: 1.6rem;
+  }
 }

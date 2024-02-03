@@ -18,7 +18,8 @@
       href="./images/favicon_io/favicon-16x16.png"
     />
     <!-- end -->
-    <title>Travel-Storm</title>
+    <script src="https://kit.fontawesome.com/450ef45e17.js" crossorigin="anonymous"></script>
+    <title>TravelStorm</title>
   </head>
   <body>
     <main>
@@ -29,7 +30,7 @@
               src="./images/logo.png"
               alt="logo of travelStorm agency"
             /> -->
-            <p>TravelStorm</p>
+            <a class="logo-anchor" href="index.html"><p>TravelStorm</p></a>
           </div>
           <div class="anchor-container flex-center">
             <a href="index.html" class="hover">Home</a>
@@ -40,7 +41,7 @@
           </div>
         </nav>
       </header>
-      <section class="section-hero flex-center">
+      <section class="section-hero flex-center" id="hero">
         <div class="hero-text-container">
           <h1>Travel like a storm!</h1>
           <p>
@@ -48,7 +49,7 @@
             as simple as any local trip,<br />
             choose your destination and dates and pack your bags!
           </p>
-          <button class="btn hover">Choose your Destination!</button>
+          <a href="#populars" class="logo-anchor"><button class="btn hover">Choose your Destination!</button></a>
         </div>
         <div class="hero-img-container flex-center">
           <img
@@ -57,32 +58,32 @@
           />
         </div>
       </section>
-      <section class="section-populars flex-center flex-column">
+      <section class="section-populars flex-center flex-column" id="populars">
         <div>
           <h2>Our Most Popular Destinations!</h2>
         </div>
         <div class="populars-container flex-center">
-          <article class="flex-center flex-column hover">
+          <a href="./pages/brussels.html" class="logo-anchor"><article class="flex-center flex-column hover">
             <img
               src="./images/home-images/home-popular-1.jpg"
               alt="An image of Brussels"
             />
             <p>Brussels</p>
             <p></p>
-          </article>
-          <article class="flex-center flex-column hover">
+          </article></a>
+          <a href="./pages/kathmandu.html" class="logo-anchor"><article class="flex-center flex-column hover">
             <img
               src="./images/home-images/home-popular-2.jpg"
               alt="An image of Kathmandu"
             />
             <p>Kathmandu</p>
-          </article>
-          <article class="flex-center flex-column hover">
+          </article></a>
+          <a href="./pages/newcastle.html" class="logo-anchor"><article class="flex-center flex-column hover">
             <img
               src="./images/home-images/home-popular-3.jpeg"
               alt="An image of Newcastle"
             />
-            <p>Newcastle</p>
+            <p>NewCastle</p>
           </article>
           <article class="flex-center flex-column hover">
             <img
@@ -90,7 +91,7 @@
               alt="An image of Tel-Aviv"
             />
             <p>Tel-Aviv</p>
-          </article>
+          </article></a>
         </div>
       </section>
       <section class="section-testimonies flex-center flex-column">
@@ -108,7 +109,7 @@
           <p>-Bruce</p>
         </div>
       </section>
-      <section class="cta-section flex-center">
+      <section class="cta-section flex-center" id="cta">
         <div class="flex-center flex-column">
           <h3>Get Your Perfect Vacation Now!</h3>
           <p>
@@ -116,12 +117,19 @@
             vacation yet!
           </p>
         </div>
-        <div>
-          <button class="btn hover">Sign Up!</button>
+        <div class="flex-center">
+          <a href="#hero" class="logo-anchor"><button class="btn hover">Sign Up!</button></a>
         </div>
       </section>
-      <footer class="flex-center">
+      <footer class="flex-center flex-column">
         <p>2024 &copy; All rights reserved to TravelStorm Inc.</p>
+        <div class="flex-center">
+          <a href="#"><i class="icon hover fa-regular fa-envelope"></i></a>
+          <a href="#"><i class="icon hover fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="icon hover fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="icon hover fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="icon hover fa-brands fa-linkedin"></i></a>
+        </div>
       </footer>
     </main>
   </body>

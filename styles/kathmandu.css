@@ -36,7 +36,7 @@ html{
 	cursor: pointer;
 }
 section{
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     padding: 2rem 0;
 }
@@ -51,6 +51,13 @@ button{
 }
 button:hover{
     background-color: #2469da;
+}
+.icon{
+	font-size: 1.8rem;
+	color: #e5e7fb;
+}
+.icon:hover{
+	color: #3882f6;
 }
 /*************************************************************/
 /************************** navigation ***********************/
@@ -87,7 +94,7 @@ nav{
 	font-size: 1.8rem;
     position: relative;
 }
-.anchor-container a.current-page {
+.current-page {
     font-weight: bold;
     font-size: 2rem;
     pointer-events: none;
@@ -113,7 +120,7 @@ nav{
 
 
 /*************************************************************/
-/************************** Hero section ***********************/
+/************************** Hero section *********************/
 /*************************************************************/
 
 .hero-section{
@@ -122,7 +129,6 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-
     flex-direction: column;
     color: #F9FAF8;
     gap: 5rem;
@@ -131,12 +137,13 @@ nav{
     font-size: 4.8rem;
     text-wrap: wrap;
     max-width: 50rem;
-
+    text-shadow: 1px 1px 2px black;
 }
 .hero-section h2{
     font-size: 2.4rem;
     text-wrap: wrap;
     max-width: 100rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 .hero-section a{
@@ -154,7 +161,7 @@ nav{
 }
 
 /*************************************************************/
-/************************** slideshow ***********************/
+/************************** slideshow ************************/
 /*************************************************************/
 
 .slideshow{
@@ -198,7 +205,7 @@ nav{
 .slide p{
     font-size: 2rem;
     max-width: 50%;
-    text-align: left;
+    text-align: center;
 }
 .slide a{
     background-color: #3882F6;
@@ -224,7 +231,7 @@ nav{
 }
 
 /*************************************************************/
-/************************** details ***********************/
+/************************** details **************************/
 /*************************************************************/
 
 .details-section{
@@ -239,6 +246,7 @@ nav{
     font-weight: 600;
     font-size: 4.8rem;
     letter-spacing: 0.1rem;
+    text-align: center;
 }
 .details-container{
     height: 80%;
@@ -250,11 +258,10 @@ nav{
     box-shadow: 2px 2px 5px #1F2037;
     max-width: 80%;
 }
-.image-container{
-    overflow: hidden;
-}
-.image-container img{
-    min-height: 100%;
+.details-container img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 .details-text-container{
     display: flex;
@@ -302,9 +309,19 @@ i{
 footer{
 	background: #1f2937;
 	color: #e5e7fb;
-	height: 4.8rem;
     font-size: 1.5rem;
 }
+footer p{
+	margin-top: 2.4rem;
+}
+footer div{
+	gap: 1.2rem;
+	margin-top: 1.2rem;
+	padding: 1.2rem 0;
+}
+/*************************************************************/
+/**************************** media queries ******************/
+/*************************************************************/
 
 
 @media only screen and (max-width: 1200px) {
@@ -318,8 +335,85 @@ footer{
         height: 100%;
         gap: 1.5rem;
     }
+    .details-container img{
+        width: 100%;
+        max-height: 40vh;
+        object-fit: cover;
+    }
     .details-section:nth-of-type(even) > .details-container {
         flex-direction: column-reverse;
     }
+    .details-section h2{
+        font-size: 3rem;
+    }
+    section{
+        min-height: 100vh;
+        height: auto;
+    }
     
+}
+@media(max-width:992px){
+	nav{
+		margin: 0 2rem;
+	}
+    .slide img{
+        max-width: 60%;
+    }
+    
+    .slide h3{
+        font-size: 3.5rem;
+        max-width: 50%;
+    }
+    .slide p{
+        font-size: 1.8rem;
+        max-width: 40%;
+    }
+    .slide a{
+        font-size: 2.5rem;
+        padding: 6px 10px;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:768px){
+    header {
+        padding: 0 0 2rem 0;
+    }
+	nav{
+		margin: 0;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0;
+		padding-top: 1.2rem;
+		gap: 1.2rem;
+	}
+    .anchor-container{
+		padding-right: 0;
+	}
+	.logo-container {
+		font-size: 1.8rem;
+	}
+	.anchor-container a{
+		font-size: 1.2rem;
+	}
+	.current-page{
+		font-size: 1.6rem;
+	}
+    .slide img{
+        max-width: 55%;
+    }
+    
+    .slide h3{
+        font-size: 3rem;
+        max-width: 50%;
+    }
+    .slide p{
+        font-size: 1.5rem;
+        max-width: 40%;
+    }
+    .slide a{
+        font-size: 2.5rem;
+        padding: 6px 10px;
+        font-weight: 400;
+    }
 }
