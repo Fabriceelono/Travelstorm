@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+.places {
+    padding: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .places div {
+    position: relative;
+    box-shadow: -15px -18px 19px 1px rgba(220, 15, 15, 0.5);
+    overflow: hidden; 
+    border-radius: 15px;
+  }
+
+  .places div:hover {
+    transform: translateY(-15px);
+    transition: transform 0.8s ease;
+    box-shadow: -15px -18px 19px 1px rgba(11, 9, 9, 0.5);
+  }
+
+  .places div img {
+    width: 380px;
+    object-fit: cover;
+  }
+
+  .places div h5 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin: 0; 
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(227, 15, 15);
+  }
