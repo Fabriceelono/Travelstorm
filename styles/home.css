@@ -193,7 +193,7 @@ header{
 	font-size: 1.8rem;
 }
 
-.populars-container article img{
+.populars-container figure img{
 	width: 200px;
 	height: 150px;
 	margin-bottom: 1.2rem;
@@ -201,11 +201,11 @@ header{
 	border: 2px solid #3882f6;
 }
 
-.populars-container article img:hover{
+.populars-container figure img:hover{
 	transform: scale(1.1);
 }
 
-.populars-container article p{
+.populars-container figure p{
 	color: #1f2937;
 }
 /*************************************************************/
@@ -246,7 +246,7 @@ header{
 	border-radius: 10px;
 }
 
-.cta-section h3{
+.cta-section figcaption{
 	font-size: 2.8rem;
 	color: #f9faf8;
 }
@@ -320,7 +320,7 @@ footer nav{
 	}
 }
 
-@media(max-width:730px){
+@media(max-width:780px){
 	.navigation{
 		margin: 0;
 		justify-content: center;
@@ -372,7 +372,7 @@ footer nav{
 		font-size: 2.2rem;
 		padding: 5rem;
 	}
-	.populars-container article:hover{
+	.populars-container figure:hover{
 	transform: scale(1.05);
 }
 
