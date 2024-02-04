@@ -331,6 +331,7 @@ footer nav{
 	.anchor-container a:first-child{
 		font-size: 1.6rem;
 	}
+	.anchor-container a:nth-child(5)
 
 	.hero-text-container{
 		margin-right: 2rem;
