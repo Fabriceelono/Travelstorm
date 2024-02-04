@@ -48,21 +48,21 @@ h1, h3, h5 {
   justify-content: space-evenly;
 }
 
-.places div {
+.places figure {
   position: relative;
   box-shadow: -15px -18px 19px 1px rgba(220, 15, 15, 0.5);
   overflow: hidden;
   border-radius: 15px;
 }
 
-.places div:hover {
+.places figure:hover {
   transform: translateY(-15px);
   transition: transform 0.8s ease;
   box-shadow: -15px -18px 19px 1px rgba(11, 9, 9, 0.5);
 }
 
-.places div img {
-  width: 100%;
+.places figure img {
+  width: auto;
   height: 200px; 
   object-fit: cover; 
   object-position: center; 
@@ -135,6 +135,14 @@ nav {
   font-size: 2rem;
 }
 
+.navigation{
+	margin: 0 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
 /* Header */
 @media(max-width:1200px){
 	.populars-container{
@@ -151,6 +159,46 @@ nav {
   }
 }
 
+@media(max-width:780px){
+	.navigation{
+		margin: 0;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0;
+		padding-top: 1.2rem;
+		gap: 1.2rem;
+	}
+	.hero-text-container{
+		margin-right: 2rem;
+		text-align: center;
+	}
+	.section-hero{
+		display: grid;
+		grid-template-rows:repeat(2, 1fr);
+		gap: 2.4rem;
+	}
+	.cta-section{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);	
+	}
+	.cta-section button{
+		margin-top: 2.4rem;
+	}
+	.anchor-container{
+		padding-right: 0;
+	}
+	.logo-container p{
+		font-size: 1.8rem;
+	}
+	.anchor-container a{
+		font-size: 1.2rem;
+	}
+	.anchor-container a:first-child{
+		font-size: 1.6rem;
+	}
+	
+}
+
 /* Footer */
 footer{
 	background: #1f2937;
@@ -162,8 +210,18 @@ footer p{
 	margin-top: 2.4rem;
 }
 
-footer div{
+footer nav{
 	gap: 1.2rem;
 	margin-top: 1.2rem;
 	padding: 1.2rem 0;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-column{
+	flex-direction: column;
 }
