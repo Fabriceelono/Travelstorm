@@ -70,28 +70,24 @@ header{
     position: fixed;
     width: 100%;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 12rem;
 }
 
-header nav{
-	margin: 0 10rem;
-    padding: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.logo-container{
+.logo-container a{
 	color: #F9FAF8;
     font-size: 2.4rem;
     font-weight: bold;
 }
 
 .anchor-container{
-    display: flex;
 	gap: 2.4rem;
 	padding-right: 2.4rem;
 }
 .anchor-container a {
+	text-decoration: none;
 	color: #E5E7EB;
 	font-size: 1.8rem;
     position: relative;
@@ -373,7 +369,7 @@ footer nav{
     
 }
 @media(max-width:992px){
-	header nav{
+	header{
 		margin: 0 2rem;
 	}
     .slide img{
@@ -396,27 +392,23 @@ footer nav{
 }
 
 @media(max-width:768px){
-    header {
-        padding: 0 0 2rem 0;
-    }
-	header nav{
+	header{
 		margin: 0;
 		justify-content: center;
 		flex-direction: column;
-		padding: 0;
 		padding-top: 1.2rem;
 		gap: 1.2rem;
 	}
     .anchor-container{
 		padding-right: 0;
 	}
-	.logo-container {
+	.logo-container a{
 		font-size: 1.8rem;
 	}
 	.anchor-container a{
 		font-size: 1.2rem;
 	}
-	.current-page{
+	.anchor-container a.current-page{
 		font-size: 1.6rem;
 	}
     .slide img{

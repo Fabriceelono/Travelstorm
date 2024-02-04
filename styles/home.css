@@ -69,25 +69,16 @@ header{
 	position: fixed;
   	z-index: 100;
   	width: 100%;
-}
-
-.navigation{
-	margin: 0 10rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2rem;
+    padding: 2rem 12rem;
 }
 
-.logo-container p{
+.logo-container a{
 	font-size: 2.4rem;
 	color: #f9faf8;
 	font-weight: bold;
-}
-
-.logo-container img {
-	width: 14rem;
-	height: 6rem;
 }
 
 .anchor-container{
@@ -121,7 +112,7 @@ header{
 }
 .anchor-container a:first-child{
 	pointer-events: none;
-	font-weight: 900;
+	font-weight: bold;
 	font-size: 2rem;
 }
 
@@ -304,8 +295,8 @@ footer nav{
 	}
 }
 
-@media(max-width:900px){
-	.navigation{
+@media(max-width:992px){
+	header{
 		margin: 0 2rem;
 	}
 	.hero-text-container{
@@ -320,15 +311,27 @@ footer nav{
 	}
 }
 
-@media(max-width:780px){
-	.navigation{
+@media(max-width:768px){
+	header{
 		margin: 0;
 		justify-content: center;
 		flex-direction: column;
-		padding: 0;
 		padding-top: 1.2rem;
 		gap: 1.2rem;
 	}
+	.anchor-container{
+		padding-right: 0;
+	}
+	.logo-container a{
+		font-size: 1.8rem;
+	}
+	.anchor-container a{
+		font-size: 1.2rem;
+	}
+	.anchor-container a:first-child{
+		font-size: 1.6rem;
+	}
+
 	.hero-text-container{
 		margin-right: 2rem;
 		text-align: center;
@@ -345,19 +348,6 @@ footer nav{
 	.cta-section button{
 		margin-top: 2.4rem;
 	}
-	.anchor-container{
-		padding-right: 0;
-	}
-	.logo-container p{
-		font-size: 1.8rem;
-	}
-	.anchor-container a{
-		font-size: 1.2rem;
-	}
-	.anchor-container a:first-child{
-		font-size: 1.6rem;
-	}
-	
 }
 
 @media(max-width:530px){
