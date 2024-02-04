@@ -10,7 +10,6 @@
 
 html{
 	font-size: 62.5%;
-/*Default font-size is 16px, I want it to be 10px so that each rem will be 10px	*/
  	overflow-x: hidden;
 }
 
@@ -67,9 +66,12 @@ main{
 
 header{
 	background: #1f2937;
+	position: fixed;
+  	z-index: 100;
+  	width: 100%;
 }
 
-nav{
+.navigation{
 	margin: 0 10rem;
 	display: flex;
 	align-items: center;
@@ -191,19 +193,19 @@ nav{
 	font-size: 1.8rem;
 }
 
-
-.populars-container article img{
+.populars-container figure img{
 	width: 200px;
 	height: 150px;
 	margin-bottom: 1.2rem;
 	border-radius: 5px;
+	border: 2px solid #3882f6;
 }
 
-.populars-container article:hover{
+.populars-container figure img:hover{
 	transform: scale(1.1);
 }
 
-.populars-container article p{
+.populars-container figure p{
 	color: #1f2937;
 }
 /*************************************************************/
@@ -244,7 +246,7 @@ nav{
 	border-radius: 10px;
 }
 
-.cta-section h3{
+.cta-section figcaption{
 	font-size: 2.8rem;
 	color: #f9faf8;
 }
@@ -278,7 +280,7 @@ footer p{
 	margin-top: 2.4rem;
 }
 
-footer div{
+footer nav{
 	gap: 1.2rem;
 	margin-top: 1.2rem;
 	padding: 1.2rem 0;
@@ -303,7 +305,7 @@ footer div{
 }
 
 @media(max-width:900px){
-	nav{
+	.navigation{
 		margin: 0 2rem;
 	}
 	.hero-text-container{
@@ -318,8 +320,8 @@ footer div{
 	}
 }
 
-@media(max-width:730px){
-	nav{
+@media(max-width:780px){
+	.navigation{
 		margin: 0;
 		justify-content: center;
 		flex-direction: column;
@@ -370,7 +372,7 @@ footer div{
 		font-size: 2.2rem;
 		padding: 5rem;
 	}
-	.populars-container article:hover{
+	.populars-container figure:hover{
 	transform: scale(1.05);
 }
 
