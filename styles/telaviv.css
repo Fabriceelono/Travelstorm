@@ -36,8 +36,7 @@ section {
 }
 
 main {
-    content: "";
-    margin-top: 48px;
+    padding-top: 48px;
     min-height: calc(100dvh - 48px);
     display: flex;
     flex-direction: column;
@@ -46,67 +45,60 @@ main {
     gap: 12px;
 }
 
+
 /*************************************************************/
 /************************** navigation ***********************/
 /*************************************************************/
 
 header {
-    height: 64px;
-    background: #1F2937;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 100;
+	background: #1f2937;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 12rem;
 }
 
-nav {
-    margin: 0 10rem;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-container {
-    color: #F9FAF8;
-    font-size: 2.4rem;
-    font-weight: bold;
+.logo-container a {
+	font-size: 2.4rem;
+	color: #f9faf8;
+	font-weight: bold;
 }
 
 .anchor-container {
-    display: flex;
-    gap: 2.4rem;
-    
+	gap: 2.4rem;
+	padding-right: 2.4rem;
 }
 
 .anchor-container a {
-    color: #E5E7EB;
-    font-size: 1.8rem;
-    position: relative;
+	text-decoration: none;
+	color: #f9faf8;
+	font-size: 1.8rem;
+	position: relative;
 }
-
-.anchor-container a.current-page {
-    font-weight: bold;
-    pointer-events: none;
-}
-
 .anchor-container a:hover {
-    color: #3882f6;
+	color: #3882f6;
 }
-
 .anchor-container a::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    position: absolute;
-    background-color: #E5E7EB;
-    left: 0;
-    bottom: -1px;
-    transition: all 300ms;
+	content: "";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	background-color: #e5e7eb;
+	left: 0;
+	bottom: -1px;
+	transition: all 300ms;
 }
-
 .anchor-container a:hover::after {
-    background-color: #3882f6;
+	width: 100%;
+	background-color: #3882f6;
+}
+.anchor-container a:first-child {
+	pointer-events: none;
+	font-weight: bold;
+	font-size: 2rem;
 }
 
 
@@ -278,26 +270,44 @@ nav {
 /*************************************************************/
 
 footer {
-    bottom: 0px;
-    background: #1F2937;
-    color: #e5e7fb;
-    font-size: 1.5rem;
+	background: #1f2937;
+	color: #e5e7fb;
+	margin-top: 2.4rem;
 }
 
+footer p {
+	margin-top: 2.4rem;
+}
+
+footer nav {
+	gap: 1.2rem;
+	margin-top: 1.2rem;
+	padding: 1.2rem 0;
+}
 
 @media(max-width:768px){
-    nav{
-        padding: 8px;
-        height: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-    }
-    .anchor-container a{
-        font-size: 1.2rem;
-    }
-    .logo-container {
+	header {
+		margin: 0;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 1.2rem;
+		gap: 1.2rem;
+	}
+	.anchor-container {
+		padding-right: 0;
+	}
+	.logo-container a {
 		font-size: 1.8rem;
+	}
+	.anchor-container a {
+		font-size: 1.2rem;
+	}
+	.anchor-container a:first-child {
+		font-size: 1.6rem;
+	}
+	.anchor-container a:nth-child(5) .hero-text-container {
+		margin-right: 2rem;
+		text-align: center;
 	}
 
     .hero
