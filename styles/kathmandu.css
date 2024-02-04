@@ -308,19 +308,27 @@ header {
 i {
 	text-align: center;
 }
-.details-text-container legend {
+.details-text-container dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+.details-text-container dt{
+	width: 50%;
+	padding: 1rem 0;
 	display: flex;
 	align-items: center;
+	
 }
-.details-text-container legend span:first-of-type {
+.details-text-container dt span {
 	font-size: 1.8rem;
 	padding: 0 1rem;
 	flex-grow: 1;
 }
-.details-text-container legend span:last-of-type {
-	justify-self: flex-end;
+.details-text-container dd {
+	width: 50%;
 	font-size: 1.8rem;
 	font-weight: 500;
+	padding: 1rem 0;
 }
 .details-container button {
 	margin-top: auto;
@@ -440,5 +448,15 @@ footer nav {
 	}
 	.hero-section h2 {
 		max-width: 90%;
+	}
+	.details-text-container dt span {
+		font-size: 1.4rem;
+	}
+	.details-text-container dd {
+		font-size: 1.4rem;
+		font-weight: 400;
+	}
+	.details-text-container dl dt i {
+		font-size: 1.4rem;
 	}
 }
