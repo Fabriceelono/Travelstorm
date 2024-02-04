@@ -132,12 +132,6 @@ header {
 	background-color: #3882f6;
 }
 
-.anchor-container a:first-child {
-  pointer-events: none;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
 /* Header */
 @media (max-width: 1200px) {
 	.populars-container {
