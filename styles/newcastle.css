@@ -13,7 +13,7 @@ html {
 }
 .flex-center {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 .flex-column {
@@ -29,6 +29,7 @@ h1 {
 	padding-top: 30px;
 	padding-bottom: 10px;
 	padding-left: 50px;
+	padding-right: 50px;
 }
 
 h3 {
@@ -37,6 +38,7 @@ h3 {
 	padding-right: 50px;
 	padding-bottom: 30px;
 }
+
 main {
 	padding-top: 60px;
 }
@@ -72,7 +74,7 @@ h5 {
 
 .places figure {
   position: relative;
-  box-shadow: -15px -18px 19px 1px rgba(220, 15, 15, 0.5);
+  box-shadow: -15px -18px 19px 1px rgba(87, 15, 220, 0.5);
   overflow: hidden;
   border-radius: 15px;
   width: 100%;
