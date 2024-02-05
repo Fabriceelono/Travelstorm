@@ -312,12 +312,11 @@ i {
 	display: flex;
 	flex-wrap: wrap;
 }
-.details-text-container dt{
+.details-text-container dt {
 	width: 50%;
 	padding: 1rem 0;
 	display: flex;
 	align-items: center;
-	
 }
 .details-text-container dt span {
 	font-size: 1.8rem;
@@ -336,6 +335,47 @@ i {
 	cursor: pointer;
 	width: 50%;
 	font-size: 2.4rem;
+}
+blockquote{
+	margin-top: auto;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	font-size: 2rem;
+	padding: 2rem 0;
+}
+blockquote::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	background: rgb(175,143,78);
+}
+blockquote::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: rgb(175,143,78);
+}
+blockquote cite{
+	text-align: center;
+}
+blockquote svg{
+	position: absolute;
+	top: 0;
+	left: 45%;
+	translate: 0 -50%;
+	color: rgb(175,143,78);
+	background-color: #e5e7eb;
+	z-index: 10;
+	width: 5rem;
+	text-align: center;
 }
 /*************************************************************/
 /**************************** footer *************************/
@@ -458,5 +498,8 @@ footer nav {
 	}
 	.details-text-container dl dt i {
 		font-size: 1.4rem;
+	}
+	blockquote{
+		font-size: 1.5rem;
 	}
 }
