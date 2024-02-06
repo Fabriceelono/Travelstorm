@@ -335,6 +335,9 @@ footer nav {
 		grid-template-rows: repeat(2, 1fr);
 		gap: 2.4rem;
 	}
+	.hero-text-container{
+		margin-right: 0;
+	}
 	.cta-section {
 		display: grid;
 		grid-template-rows: repeat(2, 1fr);
@@ -365,5 +368,6 @@ footer nav {
 	footer{
 		font-size: 1.5rem;
 	}
+
 
 }
