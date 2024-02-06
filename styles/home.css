@@ -261,6 +261,7 @@ footer {
 	background: #1f2937;
 	color: #e5e7fb;
 	margin-top: 2.4rem;
+	font-size: 1.8rem;
 }
 
 footer p {
@@ -294,6 +295,7 @@ footer nav {
 @media (max-width: 992px) {
 	.hero-text-container {
 		margin-right: 5rem;
+		text-align: center;
 	}
 	.populars-container {
 		display: grid;
@@ -354,7 +356,14 @@ footer nav {
 		font-size: 2.2rem;
 		padding: 5rem;
 	}
+	.populars-container{
+		grid-template-columns: 1fr;
+	}
 	.populars-container figure:hover {
 		transform: scale(1.05);
 	}
+	footer{
+		font-size: 1.5rem;
+	}
+
 }
