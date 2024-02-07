@@ -95,12 +95,12 @@ header {
 	width: 100%;
 	background-color: #3882f6;
 }
-.anchor-container a:first-child {
-	pointer-events: none;
+
+.current-page {
 	font-weight: bold;
 	font-size: 2rem;
+	pointer-events: none;
 }
-
 
 .hero {
     background-color: #1F2937;
@@ -272,13 +272,11 @@ header {
 footer {
 	background: #1f2937;
 	color: #e5e7fb;
-	margin-top: 2.4rem;
+	font-size: 1.5rem;
 }
-
 footer p {
 	margin-top: 2.4rem;
 }
-
 footer nav {
 	gap: 1.2rem;
 	margin-top: 1.2rem;
@@ -299,12 +297,13 @@ footer nav {
 	.logo-container a {
 		font-size: 1.8rem;
 	}
+    .anchor-container a.current-page {
+		font-size: 1.6rem;
+	}
 	.anchor-container a {
 		font-size: 1.2rem;
 	}
-	.anchor-container a:first-child {
-		font-size: 1.6rem;
-	}
+
 	.anchor-container a:nth-child(5) .hero-text-container {
 		margin-right: 2rem;
 		text-align: center;
