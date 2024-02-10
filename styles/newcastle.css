@@ -44,6 +44,7 @@ h3 {
 	padding: 20px 50px;
 }
 
+/* Places */
 .places {
 	padding: 35px;
 	display: flex;
@@ -155,4 +156,11 @@ footer nav {
 
 .icon:hover {
 	color: #3882f6;
+}
+
+/* Flex Center */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
