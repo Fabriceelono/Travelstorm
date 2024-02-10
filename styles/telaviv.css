@@ -45,6 +45,13 @@ main {
     gap: 12px;
 }
 
+.main-image-top {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
 
 /*************************************************************/
 /************************** navigation ***********************/
@@ -282,6 +289,43 @@ footer nav {
 	margin-top: 1.2rem;
 	padding: 1.2rem 0;
 }
+
+footer {
+	background: #1f2937;
+	color: #e5e7fb;
+	font-size: 1.5rem;
+}
+
+footer p {
+	margin-top: 2.4rem;
+}
+
+footer nav{
+	gap: 1.2rem;
+	margin-top: 1.2rem;
+	padding: 1.2rem 0;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.icon {
+	font-size: 1.8rem;
+	color: #e5e7fb;
+}
+
+.icon:hover {
+	color: #3882f6;
+
+}
+
 
 @media(max-width:768px){
 	header {
